@@ -1,12 +1,12 @@
 header.header
   .ui.inverted.menu.teal
-   a.item href='/'
+   a.item href='/admin'
     i.home.icon
     | 主页
-   a.item href = '/articles'
+   a.item href = '/admin/articles'
     i.bookmark.icon
     | 文章
-   a.item href = '/users'
+   a.item href = '/admin/users'
     i.user.icon
     | 用户管理
    = link_to destroy_user_session_path, :method => 'DELETE', :class => 'item right'
