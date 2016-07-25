@@ -1,0 +1,14 @@
+header.header
+  .ui.inverted.menu.teal
+   a.item href='/admin'
+    i.home.icon
+    | 主页
+   a.item href = '/admin/articles'
+    i.bookmark.icon
+    | 博文
+   a.item href = '/admin/users'
+    i.user.icon
+    | 用户管理
+   = link_to destroy_user_session_path, :method => 'DELETE', :class => 'item right'
+    i.undo.icon
+    | 退出

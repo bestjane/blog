@@ -1,0 +1,47 @@
+/*
+ *= require_self
+ *= require_tree .
+ */
+body{
+  color: rgba(0, 0, 0, 0.74902);
+}
+a{
+  text-decoration: none;
+}
+.login{
+    width: 33%;
+    margin: auto !important;
+    margin-top: 10% !important;
+}
+header .menu{
+  position:fixed;
+  top:0px;
+  left:0px;
+  right:0px;
+  z-index: 1000;
+  background-color: inherit;
+  border-radius:0px !important;
+}
+.header{
+  margin-bottom: 70px;
+}
+.pagination{
+  float: right;
+}
+.wrap{
+  position: relative;
+  left: 100px;
+  width: 1000px;
+}
+
+.custom-checkbox-field{
+  float: left !important;
+  display: inherit !important;
+}
+
+hr{
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}

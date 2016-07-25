@@ -1,0 +1,8 @@
+.ui.items
+  - @articles.each do |article|
+    .item
+      .ui.tiny.image
+        = article.title
+      .middle.aligned.content
+        a.header
+          = article.content

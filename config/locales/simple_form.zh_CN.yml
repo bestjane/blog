@@ -1,0 +1,17 @@
+zh-CN:
+  helpers:
+    submit:
+      create: "保存"
+      update: '更新'
+  simple_form:
+    "yes": '是'
+    "no": '否'
+    required:
+      text: '必填的'
+      mark: '*'
+    error_notification:
+      default_message: "操作失败，请查看下面的错误提示："
+    labels:
+      defaults:
+        password: '密码'
+        password_confirmation: '确认密码'

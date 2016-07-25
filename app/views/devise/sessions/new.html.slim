@@ -1,0 +1,29 @@
+= form_for resource, as: resource_name, url: session_path(resource_name), html: { \
+	class: 'ui form segment login' } do |f|
+  .ui.message
+    .header
+      | 博客后台登录
+  .field
+    label 电子邮件
+    .ui.left.icon.input
+      i.user.icon
+      = f.email_field :email, :autofocus => true
+        .ui.corner.label
+          i.icon.asterisk
+  .field
+    label 密码
+    .ui.left.icon.input
+      i.lock.icon
+      = f.password_field :password
+        .ui.corner.label
+          i.icon.asterisk
+  .field
+  	- if devise_mapping.rememberable?
+	  .inline.field
+	    .ui.checkbox.slider
+		  = f.check_box :remember_me
+		  label 记住我
+
+  .field
+  	label = alert
+	= f.submit "登录", :class => 'ui fluid large teal submit button'

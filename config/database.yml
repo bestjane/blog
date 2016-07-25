@@ -1,0 +1,26 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: blog
+  pool: 5
+  username: root
+  password:
+  scoket: /tmp/mysql.scok
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  database: blog
+  pool: 5
+  username: root
+  password:
+  scoket: /tmp/mysql.scok
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  database: blog
+  pool: 5
+  username: root
+  password:
+  scoket: /tmp/mysql.scok  
