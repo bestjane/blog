@@ -6,5 +6,6 @@ html
    = stylesheet_link_tag 'application', media: 'all'
    = csrf_meta_tags
   body
-    = render 'template/header'
+    - if user_signed_in?
+      = render 'template/header'
     = yield

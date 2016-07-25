@@ -1,6 +1,5 @@
 = form_for resource, as: resource_name, url: session_path(resource_name), html: { \
-	class: 'ui form segment login' } \
-	do |f|
+	class: 'ui form segment login' } do |f|
   .ui.message
     .header
       | 博客后台登录
@@ -24,6 +23,7 @@
 	    .ui.checkbox.slider
 		  = f.check_box :remember_me
 		  label 记住我
+
   .field
   	label = alert
 	= f.submit "登录", :class => 'ui fluid large teal submit button'

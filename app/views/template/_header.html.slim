@@ -9,6 +9,6 @@ header
    a.item
     i.user.icon
     | 用户管理
-   a.item.right href='/'
+   = link_to destroy_user_session_path, :method => 'DELETE', :class => 'item right'
     i.undo.icon
     | 退出
