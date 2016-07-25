@@ -21,6 +21,7 @@ gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
+gem 'kaminari'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -35,6 +36,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'slim-rails'
 gem 'semantic-ui-rails'
 gem 'less-rails'
+gem 'simple_form'
 # gem 'semantic-ui-sass', github: 'bestjane/semantic-ui-sass'
 
 group :doc do

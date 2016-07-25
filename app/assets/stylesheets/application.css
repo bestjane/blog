@@ -4,7 +4,6 @@
  */
 body{
   color: rgba(0, 0, 0, 0.74902);
-  background-color: #DADADA;
 }
 a{
   text-decoration: none;
@@ -23,16 +22,23 @@ header .menu{
   background-color: inherit;
   border-radius:0px !important;
 }
+.header{
+  margin-bottom: 70px;
+}
+.pagination{
+  float: right;
+}
+.wrap{
+  position: relative;
+  left: 100px;
+  width: 1000px;
+}
 
 .custom-checkbox-field{
   float: left !important;
   display: inherit !important;
 }
 
-.dash-form{top: 43px !important;}
-
-.hide{display: none !important;}
-.text-red{color: red;}
 hr{
     border: 0;
     height: 0;
