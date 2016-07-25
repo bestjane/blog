@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+   title blog
+   = javascript_include_tag 'application', media: 'all'
+   = stylesheet_link_tag 'application', media: 'all'
+   = csrf_meta_tags
+  body
+    - if user_signed_in?
+      = render 'template/header'
+    = yield
