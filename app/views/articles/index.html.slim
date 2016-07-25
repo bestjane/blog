@@ -1,0 +1,21 @@
+.articles.wrap
+  table.ui.very.basic.table
+    thead
+      tr
+        th 标题
+        th 内容
+        th 操作
+    tbody
+      - @articles.each do |article|
+        tr
+          td = article.title
+          td = article.content
+          td
+           .ui.buttons
+             = link_to '删除', article_path(article.id), method: 'delete', class: 'ui button small red'
+             = link_to '编辑', edit_article_path(article), class: 'ui button small positive'
+    tfoot
+      tr
+        th
+          = link_to '添加文章', new_article_path, class: 'small ui green button'
+  = paginate(@articles)

@@ -1,0 +1,11 @@
+.article.wrap
+  = simple_form_for @article, html: {class: 'ui form'} do |f|
+    .ui.segment
+      .inline.field
+        label 标题
+        = f.text_field :title
+      .inline.field
+        label 内容
+        = f.text_area :content
+      .field
+        = f.submit '保存', class: 'ui red button'
